@@ -1,0 +1,232 @@
+/* ============================================
+   Claude Resources-Inspired Design System
+   ============================================ */
+
+/* --- Design Tokens --- */
+:root {
+  /* Backgrounds */
+  --bg-main: #FFFFFF;
+  --bg-secondary: #FAFAFA;
+  --bg-code: #F5F5F4;
+
+  /* Borders */
+  --border: #E5E5E5;
+  --border-light: #F0F0F0;
+
+  /* Text */
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+
+  /* Accent (朱色) */
+  --accent: #D94032;
+  --accent-hover: #B8342A;
+  --accent-light: #FEF2F1;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --toc-width: 220px;
+  --content-max-width: 780px;
+  --header-height: 56px;
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Base --- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Prose (Article Content) --- */
+.prose h1 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin-top: 3rem;    /* mt-12 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.prose h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  margin-top: 3rem;    /* mt-12 */
+  margin-bottom: 1rem; /* mb-4 */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.3;
+}
+
+.prose h3 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  margin-top: 2rem;    /* mt-8 */
+  margin-bottom: 0.75rem; /* mb-3 */
+  line-height: 1.35;
+}
+
+.prose h4 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  margin-top: 1.5rem;  /* mt-6 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  line-height: 1.4;
+}
+
+.prose p {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.prose a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1rem; /* mb-4 */
+  padding-left: 1.5rem; /* pl-6 */
+}
+
+.prose li {
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  background-color: var(--accent-light);
+  border-radius: 0 0.375rem 0.375rem 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  background-color: var(--bg-code);
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose pre {
+  font-family: var(--font-mono);
+  background-color: var(--bg-code);
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--border);
+  padding: 0.625rem 0.875rem;
+  text-align: left;
+}
+
+.prose th {
+  background-color: var(--bg-secondary);
+  font-weight: 600;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0; /* my-8 */
+}
+
+.prose details {
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.prose summary:hover {
+  color: var(--accent-hover);
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-muted);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
