@@ -1,0 +1,30 @@
+---
+interface Props {
+  lang: 'ja' | 'en';
+}
+
+const { lang } = Astro.props;
+const currentPath = Astro.url.pathname;
+const otherLang = lang === 'ja' ? 'en' : 'ja';
+const switchedPath = currentPath.replace(`/${lang}/`, `/${otherLang}/`);
+---
+
+<a href={switchedPath} class="lang-switch" aria-label={otherLang === 'ja' ? '日本語に切替' : 'Switch to English'}>
+  {otherLang === 'ja' ? '日本語' : 'English'}
+</a>
+
+<style>
+  .lang-switch {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding: var(--space-1) var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    transition: all 0.15s;
+  }
+  .lang-switch:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+</style>
