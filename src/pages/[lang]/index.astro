@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getNavigation } from '../../utils/navigation';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'ja' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: 'ja' | 'en' };
+const nav = getNavigation(lang);
+
+const titles = {
+  ja: { main: '非エンジニアのための AI Agent 活用ガイド', sub: 'Claude Code を使ってビジネスタスクを自動化する', workshop: 'ワークショップ', selfStudy: '自己学習', workshopDesc: '講師と一緒に体験しながら学ぶ全5回シリーズ', selfStudyDesc: '自分のペースでじっくり学べる全4モジュール' },
+  en: { main: 'AI Agent Guide for Non-Engineers', sub: 'Automate business tasks with Claude Code', workshop: 'Workshop', selfStudy: 'Self-Study', workshopDesc: 'A 5-session instructor-led series', selfStudyDesc: 'A 4-module self-paced curriculum' },
+};
+
+const t = titles[lang];
+---
+
+<BaseLayout title={t.main} lang={lang}>
+  <div class="landing">
+    <div class="hero">
+      <span class="hero-mark">▸</span>
+      <h1>{t.main}</h1>
+      <p class="hero-sub">{t.sub}</p>
+    </div>
+
+    <div class="cards">
+      {nav.map(section => (
+        <a href={section.href} class="card">
+          <h2 class="card-title">{section.label}</h2>
+          <p class="card-desc">
+            {section.label === t.workshop ? t.workshopDesc : t.selfStudyDesc}
+          </p>
+          <ul class="card-items">
+            {section.children?.map(item => (
+              <li><a href={item.href}>{item.label}</a></li>
+            ))}
+          </ul>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .landing {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-12) var(--space-6);
+  }
+  .hero {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+  .hero-mark {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+  }
+  .hero h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    margin-top: var(--space-4);
+    letter-spacing: -0.02em;
+  }
+  .hero-sub {
+    color: var(--color-text-secondary);
+    font-size: var(--text-lg);
+    margin-top: var(--space-2);
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: var(--space-6);
+  }
+  .card {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-6);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 12px rgba(217, 64, 50, 0.08);
+  }
+  .card-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: var(--space-2);
+  }
+  .card-desc {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+  }
+  .card-items {
+    list-style: none;
+    padding: 0;
+  }
+  .card-items li {
+    padding: var(--space-1) 0;
+    font-size: var(--text-sm);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .card-items li:last-child {
+    border-bottom: none;
+  }
+  .card-items a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .card-items a:hover {
+    color: var(--color-accent);
+  }
+</style>
