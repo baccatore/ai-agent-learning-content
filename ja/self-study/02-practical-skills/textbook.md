@@ -1,3 +1,11 @@
+---
+title: "Module 2: 実践スキル — 業務でClaude Codeを活用する"
+lang: "ja"
+category: "self-study"
+module: "02-practical-skills"
+contentType: "textbook"
+order: 1
+---
 # Module 2: 実践スキル — 業務でClaude Codeを活用する
 
 > **前提**: Module 1で、Claude Codeの基本操作（起動、簡単な指示、ファイル操作）を習得済みであること。

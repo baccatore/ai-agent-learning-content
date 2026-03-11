@@ -1,3 +1,11 @@
+---
+title: "Module 4: 運用編 - リファレンス資料"
+lang: "ja"
+category: "self-study"
+module: "04-operations"
+contentType: "reference"
+order: 3
+---
 # Module 4: 運用編 - リファレンス資料
 
 > Claude CodeとGitHubを活用した業務運用のための参考資料集です。

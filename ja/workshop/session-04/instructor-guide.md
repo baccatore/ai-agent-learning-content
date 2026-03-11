@@ -1,3 +1,11 @@
+---
+title: "Session 4: 運用 — GitHubで業務を管理する"
+lang: "ja"
+category: "workshop"
+module: "session-04"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 4: 運用 — GitHubで業務を管理する
 
 ## セッション概要

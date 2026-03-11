@@ -1,3 +1,11 @@
+---
+title: "Module 1: 基礎編 — リファレンス資料"
+lang: "ja"
+category: "self-study"
+module: "01-foundations"
+contentType: "reference"
+order: 3
+---
 # Module 1: 基礎編 — リファレンス資料
 
 この資料は、Claude Codeを使い始めるにあたって必要な情報をまとめたものです。学習中に困ったときや、コマンドを忘れたときに参照してください。

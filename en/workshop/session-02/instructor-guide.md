@@ -1,3 +1,11 @@
+---
+title: "Session 2: Hands-On — Delegating Business Tasks to the Agent"
+lang: "en"
+category: "workshop"
+module: "session-02"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 2: Hands-On — Delegating Business Tasks to the Agent
 
 ## Session Overview

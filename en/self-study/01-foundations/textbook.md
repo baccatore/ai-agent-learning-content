@@ -1,3 +1,11 @@
+---
+title: "Module 1: Foundations — Understanding and Getting Started with AI Agents"
+lang: "en"
+category: "self-study"
+module: "01-foundations"
+contentType: "textbook"
+order: 1
+---
 # Module 1: Foundations — Understanding and Getting Started with AI Agents
 
 > **Target audience**: Non-engineers comfortable with IT tools (experienced with SaaS, but new to CLI/Git)

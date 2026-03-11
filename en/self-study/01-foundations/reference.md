@@ -1,3 +1,11 @@
+---
+title: "Module 1: Foundations — Reference Materials"
+lang: "en"
+category: "self-study"
+module: "01-foundations"
+contentType: "reference"
+order: 3
+---
 # Module 1: Foundations — Reference Materials
 
 This document compiles the essential information you need to get started with Claude Code. Refer to it whenever you get stuck or need to look up a command.

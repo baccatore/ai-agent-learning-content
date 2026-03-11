@@ -1,3 +1,11 @@
+---
+title: "Session 0: AIエージェントの威力を体験しよう"
+lang: "ja"
+category: "workshop"
+module: "session-00"
+contentType: "participant-handout"
+order: 2
+---
 # Session 0: AIエージェントの威力を体験しよう
 
 ## 今日やること

@@ -1,3 +1,11 @@
+---
+title: "Module 3: 応用ユースケース — リファレンス資料"
+lang: "ja"
+category: "self-study"
+module: "03-advanced-use-cases"
+contentType: "reference"
+order: 3
+---
 # Module 3: 応用ユースケース — リファレンス資料
 
 ---

@@ -1,3 +1,11 @@
+---
+title: "Module 3: 応用ユースケース — AIエージェントの活用範囲を広げる"
+lang: "ja"
+category: "self-study"
+module: "03-advanced-use-cases"
+contentType: "textbook"
+order: 1
+---
 # Module 3: 応用ユースケース — AIエージェントの活用範囲を広げる
 
 > **前提**: Module 1（基礎）とModule 2（実践スキル）を修了済みであること。リサーチ、資料作成、データ分析の基本操作ができること。

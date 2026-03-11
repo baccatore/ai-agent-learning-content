@@ -1,3 +1,11 @@
+---
+title: "Session 4: GitHubで業務を管理しよう"
+lang: "ja"
+category: "workshop"
+module: "session-04"
+contentType: "participant-handout"
+order: 2
+---
 # Session 4: GitHubで業務を管理しよう
 
 ## 今日やること

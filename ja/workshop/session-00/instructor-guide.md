@@ -1,3 +1,11 @@
+---
+title: "Session 0: 体験 — AIエージェントの威力を実感する"
+lang: "ja"
+category: "workshop"
+module: "session-00"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 0: 体験 — AIエージェントの威力を実感する
 
 ## セッション概要

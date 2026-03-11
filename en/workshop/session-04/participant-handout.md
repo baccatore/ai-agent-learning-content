@@ -1,3 +1,11 @@
+---
+title: "Session 4: Managing Work with GitHub"
+lang: "en"
+category: "workshop"
+module: "session-04"
+contentType: "participant-handout"
+order: 2
+---
 # Session 4: Managing Work with GitHub
 
 ## What We'll Do Today

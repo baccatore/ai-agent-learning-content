@@ -1,3 +1,11 @@
+---
+title: "Module 4: 運用編 - 演習問題集"
+lang: "ja"
+category: "self-study"
+module: "04-operations"
+contentType: "exercises"
+order: 2
+---
 # Module 4: 運用編 - 演習問題集
 
 > **対象者**: IT感度が高いがCLI未経験の方

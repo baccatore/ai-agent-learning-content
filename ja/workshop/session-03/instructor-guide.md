@@ -1,3 +1,11 @@
+---
+title: "Session 3: 実践応用 — データ分析とさらなるユースケース"
+lang: "ja"
+category: "workshop"
+module: "session-03"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 3: 実践応用 — データ分析とさらなるユースケース
 
 ## セッション概要

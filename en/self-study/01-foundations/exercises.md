@@ -1,3 +1,11 @@
+---
+title: "Module 1: Exercise Workbook"
+lang: "en"
+category: "self-study"
+module: "01-foundations"
+contentType: "exercises"
+order: 2
+---
 # Module 1: Exercise Workbook
 
 > This exercise workbook corresponds to the main textbook (textbook.md).

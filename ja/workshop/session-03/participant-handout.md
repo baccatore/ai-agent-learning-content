@@ -1,3 +1,11 @@
+---
+title: "Session 3: データ分析とさらなるユースケースを体験しよう"
+lang: "ja"
+category: "workshop"
+module: "session-03"
+contentType: "participant-handout"
+order: 2
+---
 # Session 3: データ分析とさらなるユースケースを体験しよう
 
 ## 今日やること

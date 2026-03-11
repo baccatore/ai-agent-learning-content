@@ -1,3 +1,11 @@
+---
+title: "Module 2: リファレンス資料"
+lang: "ja"
+category: "self-study"
+module: "02-practical-skills"
+contentType: "reference"
+order: 3
+---
 # Module 2: リファレンス資料
 
 > この資料は、演習や日常業務でClaude Codeを使う際にすぐ参照できるリファレンスです。

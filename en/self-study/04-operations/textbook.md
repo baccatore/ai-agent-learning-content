@@ -1,3 +1,11 @@
+---
+title: "Module 4: Operations — Managing AI Agents with GitHub"
+lang: "en"
+category: "self-study"
+module: "04-operations"
+contentType: "textbook"
+order: 1
+---
 # Module 4: Operations — Managing AI Agents with GitHub
 
 In Modules 1 through 3, you learned everything from the basics of Claude Code to advanced use cases.

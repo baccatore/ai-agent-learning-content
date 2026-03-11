@@ -1,3 +1,11 @@
+---
+title: "Module 1: 基礎 — AIエージェントを理解し、使い始める"
+lang: "ja"
+category: "self-study"
+module: "01-foundations"
+contentType: "textbook"
+order: 1
+---
 # Module 1: 基礎 — AIエージェントを理解し、使い始める
 
 > **対象読者**: ITツールに慣れている非エンジニアの方（SaaS利用経験あり、CLI/Git未経験）

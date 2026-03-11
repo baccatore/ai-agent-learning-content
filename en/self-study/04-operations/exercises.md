@@ -1,3 +1,11 @@
+---
+title: "Module 4: Exercises"
+lang: "en"
+category: "self-study"
+module: "04-operations"
+contentType: "exercises"
+order: 2
+---
 # Module 4: Exercises
 
 These exercises are designed to reinforce what you learned in textbook.md through hands-on practice.

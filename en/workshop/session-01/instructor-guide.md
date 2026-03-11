@@ -1,3 +1,11 @@
+---
+title: "Session 1: Foundations — Understanding and Running an AI Agent"
+lang: "en"
+category: "workshop"
+module: "session-01"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 1: Foundations — Understanding and Running an AI Agent
 
 ## Session Overview

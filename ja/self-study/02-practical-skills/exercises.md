@@ -1,3 +1,11 @@
+---
+title: "Module 2: 演習問題集 — 実践スキル編"
+lang: "ja"
+category: "self-study"
+module: "02-practical-skills"
+contentType: "exercises"
+order: 2
+---
 # Module 2: 演習問題集 — 実践スキル編
 
 > **注意**: この演習はすべて、実際にClaude Codeを起動して行う実践形式です。

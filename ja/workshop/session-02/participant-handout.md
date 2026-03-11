@@ -1,3 +1,11 @@
+---
+title: "Session 2: 業務タスクをエージェントに任せよう"
+lang: "ja"
+category: "workshop"
+module: "session-02"
+contentType: "participant-handout"
+order: 2
+---
 # Session 2: 業務タスクをエージェントに任せよう
 
 ## 今日やること

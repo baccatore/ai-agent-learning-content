@@ -1,574 +1,518 @@
-# Module 4: Reference Materials
+---
+title: "Module 4: Operations — Reference Materials"
+lang: "en"
+category: "self-study"
+module: "04-operations"
+contentType: "reference"
+order: 3
+---
+# Module 4: Operations — Reference Materials
 
-Supplementary reference materials for textbook.md, designed for everyday use.
+> Reference materials for managing your work with Claude Code and GitHub.
+> Use this as a dictionary to look things up as needed.
 
 ---
 
 ## 1. GitHub Glossary
 
-| Term | Definition |
-|---|---|
-| **Repository (Repo)** | A place that stores a project's files and change history |
-| **Commit** | The operation of recording file changes; like a snapshot |
-| **Branch** | A mechanism for diverging work; allows working without affecting the main line |
-| **Main (Master)** | The main line of the repository (the default branch) |
-| **Pull Request (PR)** | A mechanism for proposing changes, getting them reviewed, and merging them into the main line |
-| **Merge** | The operation of incorporating a PR's changes into the main line |
-| **Issue** | A mechanism for managing tasks, bug reports, ideas, etc. |
-| **Clone** | The operation of copying a repository to your local PC |
-| **Push** | The operation of uploading local changes to GitHub |
-| **Pull** | The operation of downloading the latest changes from GitHub to your local machine |
-| **Fork** | The operation of copying someone else's repository to your own account |
-| **Label** | A category tag attached to Issues or PRs |
-| **Milestone** | A goal with a deadline; can group multiple Issues together |
-| **Assignee** | The person responsible for an Issue or PR |
-| **Reviewer** | The person who reviews a PR's content |
-| **Collaborator** | A member with access rights to a repository |
-| **Organization** | A team or company-level account |
-| **GitHub Actions** | An automation workflow framework |
-| **Workflow** | An automated process defined in GitHub Actions |
-| **README** | A file describing the project (README.md) |
-| **.gitignore** | A file specifying which files to exclude from Git management |
-| **Markdown** | A lightweight syntax for adding formatting to text |
-| **Diff** | A display of file changes (additions in green, deletions in red) |
-| **Conflict** | A state where multiple changes are incompatible with each other |
-| **CLAUDE.md** | A file containing instructions and settings for Claude Code |
+Common GitHub terms explained with everyday analogies.
+
+| # | Term | Description | Everyday Analogy |
+|---|------|-------------|-----------------|
+| 1 | Repository | A place that stores all of a project's files and their change history | A dedicated project folder |
+| 2 | Branch | A parallel line of work that does not affect the main files | A draft copy |
+| 3 | Commit | Recording a set of file changes | Pressing the "Save" button |
+| 4 | Push | Uploading your local changes to GitHub | Syncing files to the cloud |
+| 5 | Pull | Downloading the latest state from GitHub to your computer | Fetching the latest version from the cloud |
+| 6 | Issue | A ticket for recording tasks, bug reports, or feature requests | A sticky note with a to-do item |
+| 7 | Pull Request (PR) | A request for others to review and approve your changes | A document sent around for review and sign-off |
+| 8 | Merge | Integrating a branch's changes into the main branch | Incorporating a draft into the final version |
+| 9 | main branch | The official, primary branch of a repository | The "clean copy" folder |
+| 10 | Review | Examining a PR's content and providing approval or comments | Having a manager check your document |
+| 11 | Clone | Downloading a repository to your local computer | Copying an entire cloud folder to your PC |
+| 12 | Fork | Copying someone else's repository to your own account | Making a personal copy of someone else's work |
+| 13 | Conflict | A state where the same section was changed differently by different people, preventing automatic merge | Two people filling in the same field with different information |
+| 14 | Label | A category tag attached to Issues or PRs | A colored sticker on a file |
+| 15 | README | A file that serves as the repository's description | A project's cover page and table of contents |
+| 16 | CLAUDE.md | A file containing instructions and settings for Claude Code | A work manual for your AI assistant |
 
 ---
 
-## 2. Git Command Quick Reference
+## 2. GitHub Basic Operations Cheat Sheet (Web UI)
 
-Claude Code can run these for you, but here's a summary of key commands for reference.
+All operations can be performed in the browser via GitHub's Web UI. No command-line input required.
 
-### Basic Commands
+### Repository Operations
 
-| Command | Meaning | How to Ask Claude Code |
-|---|---|---|
-| `git init` | Initialize a folder for Git management | "Initialize this folder as a Git repository" |
-| `git clone URL` | Copy a repository to your local machine | "Clone this repository" |
-| `git add filename` | Stage a file for commit | (Handled automatically as part of the commit process) |
-| `git commit -m "message"` | Record changes | "Commit these changes with the message '...'" |
-| `git push` | Upload to GitHub | "Push this to GitHub" |
-| `git pull` | Download the latest from GitHub | "Pull the latest changes" |
-| `git status` | Check the current state | "Check the Git status" |
-| `git log` | Show commit history | "Show me the commit history" |
+| What You Want to Do | Steps |
+|---------------------|-------|
+| Create a repository | Top-right "+" -> "New repository" -> Fill in details -> "Create repository" |
+| Create a new file | Repository page -> "Add file" -> "Create new file" -> Enter content -> "Commit changes" |
+| Upload files | Repository page -> "Add file" -> "Upload files" -> Drag & drop -> "Commit changes" |
+| Edit a file | Click the file -> Pencil icon -> Edit -> "Commit changes" |
+| Delete a file | Click the file -> "..." menu -> "Delete file" -> "Commit changes" |
+| Create a folder | "Create new file" -> Type `foldername/filename` in the name field (use a slash to create the folder) |
 
-### Branch-Related Commands
+### Issue Operations
 
-| Command | Meaning | How to Ask Claude Code |
-|---|---|---|
-| `git branch branch-name` | Create a branch | "Create a new branch" |
-| `git checkout branch-name` | Switch to a branch | "Switch to the ... branch" |
-| `git checkout -b branch-name` | Create and switch to a branch | "Create a new branch called ... and switch to it" |
+| What You Want to Do | Steps |
+|---------------------|-------|
+| Create an Issue | "Issues" tab -> "New issue" -> Enter title & body -> "Submit new issue" |
+| Add a label | Issue page -> Right sidebar "Labels" -> Select labels |
+| Assign someone | Issue page -> Right sidebar "Assignees" -> Select users |
+| Close an Issue | Bottom of the Issue page -> "Close issue" |
+| Add a comment | Text box at the bottom of the Issue page -> Enter text -> "Comment" |
+| Search Issues | "Issues" tab -> Enter keywords in the search bar |
 
----
+### Pull Request Operations
 
-## 3. Setup Checklists
+| What You Want to Do | Steps |
+|---------------------|-------|
+| View PR list | Click the "Pull requests" tab |
+| View PR changes | PR page -> "Files changed" tab |
+| Comment on a line | "Files changed" -> Click "+" next to a line number -> Enter comment -> "Start a review" |
+| Submit a review | "Finish your review" -> Approve / Request changes / Comment -> "Submit review" |
+| Merge a PR | "Merge pull request" -> "Confirm merge" |
+| Delete a branch | After merging, click "Delete branch" |
 
-### New Repository Setup Checklist
+### Settings Operations
 
-Items to verify when creating a new repository:
-
-- [ ] **Repository name**: Is it a clear, descriptive name?
-- [ ] **Visibility**: Is it set to Private for business use?
-- [ ] **README.md**: Does it contain a project overview?
-- [ ] **CLAUDE.md**: Does it contain settings for the AI agent?
-- [ ] **.gitignore**: Are sensitive and unnecessary files excluded?
-- [ ] **Labels**: Have the labels needed for the project been created?
-- [ ] **Issue templates**: Are team-use templates prepared?
-- [ ] **Branch protection rules**: Is direct push to the main branch restricted? (for team use)
-- [ ] **Collaborators**: Have necessary members been added with appropriate permissions?
-
-### Team Operations Launch Checklist
-
-Items to verify before starting team operations:
-
-- [ ] Do all members have GitHub accounts?
-- [ ] Can all members access the repository?
-- [ ] Are permission levels set appropriately?
-- [ ] Does CLAUDE.md contain shared team rules?
-- [ ] Are issue templates prepared?
-- [ ] Are reviewer assignment rules established?
-- [ ] Have security guidelines been shared?
-- [ ] Are fact-checking rules established?
-- [ ] Has a task management board been created in GitHub Projects? (optional)
+| What You Want to Do | Steps |
+|---------------------|-------|
+| Check visibility | "Settings" -> "General" -> Scroll to "Danger Zone" -> "Change visibility" |
+| Manage labels | "Issues" -> "Labels" -> "New label" |
+| Create Issue templates | "Settings" -> "General" -> Features section -> "Set up templates" |
+| Check collaborators | "Settings" -> "Collaborators" |
+| Set branch protection | "Settings" -> "Branches" -> "Add branch protection rule" |
 
 ---
 
-## 4. Security Checklists
+## 3. CLAUDE.md Template Collection
 
-### Routine Security Checks
+CLAUDE.md templates for different types of work. Customize them to fit your needs.
 
-Items to verify every time you use an AI agent:
-
-**Checking data shared with AI:**
-- [ ] Does it contain personal information (names, addresses, phone numbers, email addresses, etc.)?
-- [ ] Does it contain authentication credentials (passwords, API keys, tokens, etc.)?
-- [ ] Does it contain confidential company information?
-- [ ] Is it acceptable according to your company's data classification standards?
-
-**Checking deliverables:**
-- [ ] Are there any factual errors? (Has fact-checking been completed?)
-- [ ] Does it unintentionally contain confidential information?
-- [ ] Is the content safe for external release? (if publication is planned)
-
-**Before uploading to GitHub:**
-- [ ] Is .gitignore properly configured?
-- [ ] Are there any sensitive files in the commit?
-- [ ] Is the repository's visibility setting appropriate?
-
-### Periodic Security Review (Monthly Recommended)
-
-- [ ] Review the repository's collaborator list for unnecessary members
-- [ ] Confirm that access has been removed for departed or transferred employees
-- [ ] Verify the repository's visibility setting is appropriate
-- [ ] Check GitHub Actions workflows for suspicious changes
-- [ ] Review API key and Secret expiration dates
-- [ ] Update security-related content in CLAUDE.md
-
----
-
-## 5. CLAUDE.md Template Collection
-
-### Template 1: Basic Template
-
-A minimal CLAUDE.md for projects.
+### Template 1: Research Projects
 
 ```markdown
-# CLAUDE.md
+# CLAUDE.md - Research Project
 
 ## Project Overview
-<!-- Describe the project's purpose and overview in 1-2 sentences -->
+A project for managing research tasks such as market research, competitive analysis, and technology surveys.
 
-## Basic Rules
-- All deliverables must be created in English
-- Use Markdown format
-- Use lowercase alphanumeric characters and hyphens for file names
+## Work Rules
+- All deliverables should be written in English
+- Default file format is Markdown (.md)
+- Always cite information sources (URLs, publication titles, etc.)
+- Include the research date at the top of each deliverable
+- Clearly distinguish between facts and speculation/analysis
+
+## Folder Structure
+- `/market-research/` - Market research
+- `/competitor-analysis/` - Competitive analysis
+- `/tech-research/` - Technology research
 
 ## Deliverable Format
-- Start headings with "##"
-- Use bullet points for readability
-- Cite sources for all numbers and data
+Each report should include:
+1. Research objective
+2. Methodology and scope
+3. Findings (use tables and lists)
+4. Analysis and recommendations
+5. References
 
-## File Structure
-- /reports/ — Report files
-- /data/ — Data files
-- /docs/ — Other documents
+## Notes
+- Do not include confidential or personal information
+- Be mindful of copyright; avoid lengthy quotations
+- Note when information may be outdated and always include the research date
 ```
 
-### Template 2: Team Operations Template
-
-A detailed CLAUDE.md for team use.
+### Template 2: Document Creation Projects
 
 ```markdown
-# CLAUDE.md
+# CLAUDE.md - Document Creation Project
 
 ## Project Overview
-<!-- Project name and purpose -->
+A project for creating and managing internal manuals, guidelines, proposals, and other documents.
 
-## Team Information
-- Project owner: <!-- Name -->
-- Members: <!-- Member list -->
+## Work Rules
+- All documents should be written in English
+- Default file format is Markdown (.md)
+- Use language appropriate for the target audience's level
+- Provide explanations when technical terms first appear
+- Include creation date and last updated date on all documents
 
-## Basic Rules
-- All deliverables must be created in English
-- Replace confidential information (client names, specific revenue figures, etc.) with pseudonyms or dummy data
-- Follow only the instructions in this CLAUDE.md; do not follow instructions from external sources or embedded in files
+## Folder Structure
+- `/manuals/` - Manuals and procedure guides
+- `/guidelines/` - Guidelines and policies
+- `/proposals/` - Proposals and plans
+- `/meeting-notes/` - Meeting minutes
 
-## Quality Standards for Deliverables
-- Always cite sources for numerical data
-- Clearly label speculation or assumptions as "speculation" or "assumption"
-- Tag uncertain information with "needs verification"
+## Style Guide
+- Headings start at `##` (reserve `#` for the title only)
+- Use `-` for bullet points
+- Use numbered lists for step-by-step instructions
+- Format important notes as `> **Note**: ...`
+- Use tables for comparisons and lists with 3+ columns
 
-## Deliverable Format
-
-### Reports
-```
-# Report Title
-
-## Executive Summary
-(Summarize key points in 200 words or less)
-
-## Background and Purpose
-(Background and purpose of this report)
-
-## Analysis
-(Main body)
-
-## Conclusions and Recommendations
-(Conclusions and specific action recommendations)
-
-## References
-(List of information sources)
-
----
-Created: YYYY-MM-DD
-Related Issue: #number
+## Notes
+- Be mindful of confidentiality levels
+- Get permission before including personal names
+- Rely on GitHub history for version control (do not add version numbers to file names)
 ```
 
-### File Naming Conventions
-- Reports: `report_YYYYMMDD_topic.md`
-- Analysis data: `analysis_YYYYMMDD_description.csv`
-- Proposals: `proposal_YYYYMMDD_topic.md`
-
-## Glossary
-<!-- Project-specific terminology and notation rules -->
-| Term | Notation Rule |
-|------|-----------|
-| <!-- e.g., Customer --> | <!-- Client --> |
-
-## Prohibited Items
-- Do not include real client names in deliverables
-- Do not include API keys or passwords in files
-- Do not use content with unclear licensing
-```
-
-### Template 3: Data Analysis Project
+### Template 3: Data Analysis Projects
 
 ```markdown
-# CLAUDE.md
+# CLAUDE.md - Data Analysis Project
 
 ## Project Overview
-A project focused primarily on data analysis.
+A project for managing data analysis, visualization, and report creation.
 
-## Basic Rules
-- All deliverables must be created in English
-- Use Python for data analysis
-- Use English labels for graphs
+## Work Rules
+- Analysis reports should be written in English
+- Keep data files and analysis reports in separate folders
+- Always state analysis assumptions and prerequisites
+- Use appropriate units and decimal places for numbers
+- Include titles and descriptions for all charts and tables
 
-## Data Handling
-- data/raw/ — Raw data (do not modify)
-- data/processed/ — Processed data
-- data/private/ — Confidential data (excluded via .gitignore)
+## Folder Structure
+- `/data/` - Source data (CSV, etc.)
+- `/reports/` - Analysis reports
+- `/dashboards/` - Periodic reports and dashboards
 
-## Analysis Report Format
-1. Analysis purpose
-2. Description of data used
-3. Analysis methodology
-4. Results (including graphs and tables)
-5. Discussion
+## Report Format
+Each report should include:
+1. Analysis objective
+2. Data overview (period, record count, source)
+3. Methodology
+4. Results (including tables and charts)
+5. Analysis and insights
 6. Recommended actions
 
-## Graph Creation Rules
-- Titles should be concise and in English
-- Axis labels should be in English with units specified
-- Use color-blind-friendly color schemes
-- Legends should be in English
-
-## Important Notes
-- Mask any data that could identify individuals
-- Standardize rounding to one decimal place
-- If outliers are excluded, clearly state the reason
+## Notes
+- Anonymize any personally identifiable data
+- Do not include large data files in the repository (add to .gitignore)
+- Clearly distinguish between sample data and production data
 ```
 
-### Template 4: Research Project
+### Template 4: Project Management
 
 ```markdown
-# CLAUDE.md
+# CLAUDE.md - Project Management
 
 ## Project Overview
-A project focused on industry research and competitive analysis.
+A project for managing team project materials and templates.
 
-## Basic Rules
-- All deliverables must be created in English
-- Always cite information sources
-- Clearly distinguish between facts and speculation
+## Work Rules
+- All materials should be written in English
+- Use Issue labels for status management
+- Create weekly progress reports
+- Meeting minutes should be created within 24 hours of the meeting
 
-## Information Reliability Ratings
-Append the following ratings to information referenced in research:
-- [A] Official announcements and primary sources (official company websites, IR materials, government statistics, etc.)
-- [B] Reliable secondary sources (major media outlets, research firm reports, etc.)
-- [C] Other sources (blogs, social media posts, etc.)
-- [?] Source unknown / needs verification
+## Folder Structure
+- `/plans/` - Plans and schedules
+- `/reports/` - Progress reports and weekly updates
+- `/meeting-notes/` - Meeting minutes
+- `/retrospectives/` - Retrospectives
 
-## Research Report Format
-1. Executive summary
-2. Research background and purpose
-3. Methodology (list of referenced sources)
-4. Findings
-5. Analysis and discussion
-6. Recommendations and suggested actions
-7. Source list (with reliability ratings)
+## Label Guidelines
+- `priority:high` `priority:medium` `priority:low` for priority management
+- `research` `document` `data-analysis` for task type
+- `review-needed` `in-progress` `done` for progress tracking
 
-## Important Notes
-- Do not include speculative non-public information about competitors
-- Add a note "* Information as of YYYY" for older information (2+ years old)
-- Add a "requires legal review" note for any statements involving legal judgments
+## Notes
+- Do not include HR or performance review information
+- Use code names for client names when needed
+```
+
+### Template 5: Knowledge Management
+
+```markdown
+# CLAUDE.md - Knowledge Base
+
+## Project Overview
+A knowledge base for accumulating and sharing expertise and know-how gained through work.
+
+## Work Rules
+- All articles should be written in English
+- One topic per file as a general rule
+- Include links for citations and references
+- Periodically review and update older articles
+
+## Folder Structure
+- `/how-to/` - How-to guides and procedures
+- `/tips/` - Tips and tricks
+- `/glossary/` - Term definitions
+- `/case-studies/` - Case studies
+- `/faq/` - Frequently asked questions
+
+## Article Format
+Include the following at the top of each article:
+- Creation date
+- Last updated date
+- Category (matching the folder structure above)
+
+Body structure:
+1. Overview (3 lines or fewer)
+2. Body (detailed content)
+3. Related article links (if any)
+
+## Notes
+- Do not include proprietary technical information in public repositories
+- Check that screenshots do not contain confidential information
 ```
 
 ---
 
-## 6. Issue Template Collection
+## 4. Security Checklist
 
-### Research Request
+A 10-item checklist for safely managing your repository. Review it regularly.
+
+### When Creating a Repository (One-Time)
+
+| # | Checklist Item | How to Verify | What to Do |
+|---|---------------|---------------|------------|
+| 1 | Is the repository set to Private? | Settings -> General -> Danger Zone | If Public, change to Private |
+| 2 | Is a `.gitignore` file configured? | Check for the file in the repository root | Create one if missing (see Exercise 5) |
+| 3 | Have you avoided granting access to unnecessary collaborators? | Settings -> Collaborators | Remove unnecessary members |
+
+### Every Time You Add or Edit Files
+
+| # | Checklist Item | How to Verify | What to Do |
+|---|---------------|---------------|------------|
+| 4 | Are there passwords or API keys in the file? | Visually inspect file contents | Remove them and immediately change the affected keys/passwords |
+| 5 | Does the file contain personal information (names, phone numbers, email addresses)? | Visually inspect file contents | Anonymize or remove |
+| 6 | Does the file contain internal system URLs or IP addresses? | Visually inspect file contents | Remove or replace with dummy values |
+| 7 | Does the file contain database connection strings? | Visually inspect file contents | Remove and change the connection credentials |
+
+### Regular Checks (Monthly Recommended)
+
+| # | Checklist Item | How to Verify | What to Do |
+|---|---------------|---------------|------------|
+| 8 | Are there unnecessary collaborators in the list? | Settings -> Collaborators | Remove access for former employees or transferred staff |
+| 9 | Has the visibility been unintentionally changed? | Settings -> General -> Danger Zone | If it has become Public, immediately switch back to Private |
+| 10 | Does the commit history contain confidential information? | Review commit history | If found, immediately change the affected keys/passwords |
+
+### If You Accidentally Commit Confidential Information
+
+> **Important**: Once information has been uploaded to GitHub, it may persist in the commit history even after you delete the file.
+
+**Emergency Response Steps:**
+
+1. **Immediately invalidate/change** the affected passwords or API keys (this is the top priority)
+2. Remove the confidential information from the file and create a new commit
+3. Add the file pattern to `.gitignore` to prevent recurrence
+4. Report to your repository administrator or security team as needed
+
+---
+
+## 5. Issue/PR Template Samples
+
+### Issue Template: General Task Request
+
+Place this as a Markdown file in the `.github/ISSUE_TEMPLATE/` folder, and it will appear as an option when creating a new Issue.
+
+```markdown
+---
+name: Task Request
+about: Template for requesting work from Claude Code
+title: ''
+labels: ''
+assignees: ''
+---
+
+## Task Overview
+<!-- Describe what you need done in 1-2 sentences -->
+
+## Detailed Requirements
+<!-- List what the deliverable should include as bullet points -->
+- [ ]
+- [ ]
+- [ ]
+
+## Deliverable
+- **File format**: Markdown
+- **Save to**: `/folder-name/`
+- **File name**: `filename.md`
+
+## Background / Additional Information
+<!-- Provide any context or reference material -->
+
+## Definition of Done
+<!-- Describe what "complete" looks like -->
+- [ ]
+- [ ]
+```
+
+### Issue Template: Bug / Correction Request
+
+```markdown
+---
+name: Bug / Correction Request
+about: Template for reporting errors or improvements in deliverables
+title: '[Fix] '
+labels: 'bug'
+assignees: ''
+---
+
+## Problem Summary
+<!-- Describe which file has what problem -->
+
+## Affected File
+- File path: <!-- e.g., /research/market-report.md -->
+
+## Problem Details
+<!-- Describe specifically what is wrong or what should be improved -->
+
+## Expected State
+<!-- Describe what the correct state should be -->
+
+## Priority
+- [ ] High (blocks work)
+- [ ] Medium (should be fixed)
+- [ ] Low (fix when time permits)
+```
+
+### Issue Template: Research Request
 
 ```markdown
 ---
 name: Research Request
-about: Request a research or analysis task for an AI agent
-labels: research
+about: Template for requesting research from Claude Code
+labels: 'research'
+assignees: ''
 ---
 
 ## Research Topic
-<!-- What do you want researched? -->
+<!-- Describe what you want researched -->
 
-## Background and Purpose
-<!-- Why is this research needed? -->
+## Background & Purpose
+<!-- Explain why this research is needed -->
+
+## Scope
+<!-- Describe how far the research should go -->
 
 ## Deliverable Requirements
 - Format: Markdown
-- Length: <!-- Target word count -->
-- Content to include:
-  - <!-- Item 1 -->
-  - <!-- Item 2 -->
+- Save to: `/research/`
+- File name: <!-- e.g., market-trends-2026.md -->
+- Target length: <!-- e.g., 1,000-1,500 words -->
 
 ## Target Audience
-<!-- Who will read this, and what is their knowledge level? -->
-
-## Deadline
-<!-- When is this needed by? -->
-
-## Reference Materials
-<!-- Reference URLs, internal documents, etc. -->
-```
-
-### Report Creation Request
-
-```markdown
----
-name: Report Creation Request
-about: Request document or report creation from an AI agent
-labels: documentation
----
-
-## Report Title
-<!-- Title -->
-
-## Purpose
-<!-- Purpose of this report -->
-
-## Structure
-<!-- Desired sections -->
-
-## Data to Use
-<!-- Data or files to reference -->
-
-## Target Audience
-<!-- Who is this report for? -->
-
-## Tone
-<!-- Formal / Casual / Business, etc. -->
-
-## Additional Notes
-<!-- Any other requirements -->
-```
-
-### Data Analysis Request
-
-```markdown
----
-name: Data Analysis Request
-about: Request data analysis and visualization from an AI agent
-labels: analysis
----
-
-## Analysis Purpose
-<!-- What do you want to find out? -->
-
-## Target Data
-<!-- File path or description of the data -->
-
-## Analysis Requirements
-- [ ] <!-- Analysis item 1 -->
-- [ ] <!-- Analysis item 2 -->
-- [ ] <!-- Analysis item 3 -->
-
-## Visualization Preferences
-- [ ] Chart type: <!-- Bar chart, line chart, etc. -->
-- [ ] Comparison axis: <!-- Time period comparison, category comparison, etc. -->
-
-## Target Audience
-<!-- Who will see the analysis results? -->
+<!-- Who will read this? What is their knowledge level? -->
 
 ## Deadline
 <!-- When is this needed by? -->
 ```
 
-### Improvement Proposal
+### PR Template
+
+Place this at `.github/pull_request_template.md` and it will be auto-inserted when creating a PR.
 
 ```markdown
----
-name: Improvement Proposal
-about: Propose improvements to workflows or documentation
-labels: enhancement
----
+## Summary
+<!-- Briefly describe what this PR does -->
 
-## What to Improve
-<!-- What do you want to improve? -->
+## Related Issue
+<!-- List the related Issue number -->
+Closes #
 
-## Current Issues
-<!-- What problems exist today? -->
+## Changes
+<!-- List the files added/changed and what was done -->
+-
 
-## Proposed Improvement
-<!-- How would you like to improve it? -->
+## Areas to Review
+<!-- Highlight anything you want the reviewer to focus on -->
+-
 
-## Expected Benefits
-<!-- What will improve as a result? -->
+## Checklist
+- [ ] Follows CLAUDE.md rules
+- [ ] Contains no confidential information
+- [ ] Language and terminology are consistent
+- [ ] Files are placed in the correct folders
 ```
 
 ---
 
-## 7. GitHub Actions Workflow Configuration Example
+## 6. Frequently Asked Questions (FAQ)
 
-> **Note**: This section contains technical content.
-> We recommend just using it as a reference at first and seeking engineer support when actually configuring it.
+### Q1: What is the difference between Public and Private repositories?
 
-### Automatically Running Claude Code When an Issue Is Created
-
-```yaml
-# .github/workflows/claude-agent.yml
-name: Claude Code Agent
-
-on:
-  issues:
-    types: [opened]
-
-jobs:
-  agent-task:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run Claude Code
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          # Install and run Claude Code
-          npm install -g @anthropic-ai/claude-code
-          claude --issue ${{ github.event.issue.number }}
-```
-
-**Setup steps:**
-
-1. Go to the repository's Settings → Secrets and variables → Actions and register `ANTHROPIC_API_KEY`
-2. Create the YAML file above as `.github/workflows/claude-agent.yml`
-3. Commit it to the main branch
-
-> **Security notes**:
-> - Always manage API keys using GitHub Secrets (never write them directly in files)
-> - Periodically review the contents of auto-running workflows
-> - For public repositories, additional safeguards are needed since anyone can create Issues
+**A**: Public repositories are visible to anyone on the internet. Private repositories are visible only to you and people you have explicitly granted access to. For work purposes, always select **Private**.
 
 ---
 
-## 8. Troubleshooting
+### Q2: Why is CLAUDE.md necessary?
 
-### Common Issues and Solutions
+**A**: CLAUDE.md serves as a "work manual" for Claude Code. By documenting work rules, folder structure, and important notes, Claude Code will follow those rules when working. This means you get consistent deliverables without having to repeat detailed instructions every time, improving both efficiency and quality.
 
-| Problem | Cause | Solution |
+---
+
+### Q3: I do not understand the difference between Issues and Pull Requests.
+
+**A**: In simple terms, an Issue records "what needs to be done," while a Pull Request (PR) is a mechanism for getting "what was done" reviewed and approved.
+
+| | Issue | Pull Request |
 |---|---|---|
-| Can't push | No access to the repository | Ask the repository owner to invite you as a Collaborator |
-| Can't push | Authentication not configured | Ask Claude Code to "set up GitHub authentication" |
-| Can't create a PR | Branch is not up to date | Ask Claude Code to "pull the latest changes and then create the PR" |
-| Can't merge | Conflict (competing changes) | Ask Claude Code to "resolve the conflicts" |
-| Issue templates don't appear | Files are in the wrong location | Verify files are in the `.github/ISSUE_TEMPLATE/` folder |
-| GitHub Actions not running | YAML file syntax error | Check the error log and ask Claude Code to fix it |
-| File not excluded by .gitignore | File is already tracked by Git | Ask Claude Code to "remove this file from Git tracking" |
+| Role | Defining and requesting tasks | Reviewing and approving deliverables |
+| Timing | Created before work begins | Created after work is done |
+| Analogy | A work order | A completed document circulated for review |
 
-### Troubleshooting Flow
-
-```
-Start by asking Claude Code
-    ↓ (if unresolved)
-Copy the error message and show it to Claude Code
-    ↓ (if unresolved)
-Consult the official GitHub documentation
-    https://docs.github.com
-    ↓ (if unresolved)
-Ask an engineer or knowledgeable person on your team
-```
+Typical flow: Create Issue -> Do the work -> Create PR -> Review -> Merge -> Issue auto-closes
 
 ---
 
-## 9. Markdown Quick Reference
+### Q4: What is a branch? Why is it needed?
 
-A reference of Markdown syntax available on GitHub.
+**A**: A branch is a "working copy" that branches off from the main line. Instead of modifying the main branch directly, you work in a separate space and then merge the results. Claude Code creates branches automatically when working, so you typically do not need to think about them. Merging a PR incorporates the branch's content into the main branch.
 
-### Text Formatting
+---
 
-| Syntax | Result |
-|---|---|
-| `**bold**` | **bold** |
-| `*italic*` | *italic* |
-| `~~strikethrough~~` | ~~strikethrough~~ |
-| `` `code` `` | `code` |
+### Q5: I noticed a mistake after merging a PR. Can I undo it?
 
-### Headings
+**A**: Yes. Open the merged PR and you will see a "**Revert**" button. Clicking it automatically creates a new PR that undoes the merge. GitHub retains the full change history, so you can always go back to any previous point in time.
 
-```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-```
+---
 
-### Lists
+### Q6: I accidentally committed confidential information. What should I do?
 
-```markdown
-- Bullet point
-- Bullet point
-  - Nested
+**A**: **Top priority**: Immediately change or invalidate the affected passwords or API keys. Simply deleting the file is not enough, as the information remains in the commit history. After changing the credentials, also remove the confidential information from the file and add the pattern to `.gitignore` to prevent recurrence. If you are unsure, consult your security team.
 
-1. Numbered
-2. Numbered
+---
 
-- [x] Completed task
-- [ ] Incomplete task
-```
+### Q7: Do I need to specify the Issue number every time I ask Claude Code to work on something?
 
-### Links and Images
+**A**: It is not strictly required, but strongly recommended. When you specify an Issue number, Claude Code reads the Issue's content (title, description, requirements) and works accordingly. Saying "Please work on Issue #3" is the most reliable approach.
 
-```markdown
-[Link text](URL)
-![Image description](image URL)
-```
+---
 
-### Tables
+### Q8: Can I ask Claude Code to work on multiple Issues at once?
 
-```markdown
-| Column 1 | Column 2 | Column 3 |
-|-----|-----|-----|
-| Data | Data | Data |
-```
+**A**: Technically possible, but **working on one Issue at a time produces more consistent quality**. The recommended approach is to complete one Issue, create a PR, and then move on to the next. This allows you to review each deliverable individually and makes it easier to isolate any problems.
 
-### Blockquotes
+---
 
-```markdown
-> Quoted text
-```
+### Q9: What can I do with GitHub's free plan?
 
-### Code Blocks
+**A**: GitHub's free plan supports all the features covered in this course.
 
-````markdown
-```python
-print("Hello, World!")
-```
-````
+| Feature | Free Plan |
+|---------|-----------|
+| Private repositories | Unlimited |
+| Issue management | Available |
+| Pull Requests | Available |
+| Project boards | Available |
+| Adding collaborators | Available |
+| GitHub Actions (automation) | 2,000 minutes/month free |
 
-### Collapsible Sections
+This is more than sufficient for individual use or small teams.
 
-```markdown
-<details>
-<summary>Click to expand</summary>
+---
 
-Hidden content
+### Q10: How should I organize things when I have many repositories?
 
-</details>
-```
+**A**: Here are four ways to keep things tidy:
 
-### Issue/PR References
-
-```markdown
-#123        — Reference to an Issue/PR number
-@username   — Mention a user
-```
+1. **Use a consistent naming convention**: Establish a pattern like `department-project` (e.g., `sales-market-research`, `hr-onboarding-docs`)
+2. **Always fill in the Description**: Write a brief description of the repository's purpose in the description field
+3. **Archive inactive repositories**: Settings -> "Archive this repository" makes it read-only. This preserves history while decluttering your active list
+4. **Add Topics (tags)**: Click "Add topics" on the repository's main page to add tags that make searching and categorization easier

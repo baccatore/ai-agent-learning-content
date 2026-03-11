@@ -1,3 +1,11 @@
+---
+title: "Session 1: Understanding and Running AI Agents"
+lang: "en"
+category: "workshop"
+module: "session-01"
+contentType: "participant-handout"
+order: 2
+---
 # Session 1: Understanding and Running AI Agents
 
 ## What We'll Do Today

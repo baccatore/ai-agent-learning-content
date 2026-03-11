@@ -1,3 +1,11 @@
+---
+title: "Session 2: 実践 — 業務タスクをエージェントに任せる"
+lang: "ja"
+category: "workshop"
+module: "session-02"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 2: 実践 — 業務タスクをエージェントに任せる
 
 ## セッション概要

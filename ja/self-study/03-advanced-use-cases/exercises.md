@@ -1,3 +1,11 @@
+---
+title: "Module 3: 応用ユースケース — 実践演習集"
+lang: "ja"
+category: "self-study"
+module: "03-advanced-use-cases"
+contentType: "exercises"
+order: 2
+---
 # Module 3: 応用ユースケース — 実践演習集
 
 ## この演習集の使い方

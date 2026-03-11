@@ -1,3 +1,11 @@
+---
+title: "Module 4: 運用 — GitHubでAIエージェントを管理する"
+lang: "ja"
+category: "self-study"
+module: "04-operations"
+contentType: "textbook"
+order: 1
+---
 # Module 4: 運用 — GitHubでAIエージェントを管理する
 
 Module 1〜3では、Claude Codeの基本操作から応用的なユースケースまでを学びました。

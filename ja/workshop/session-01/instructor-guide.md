@@ -1,3 +1,11 @@
+---
+title: "Session 1: 基礎 — AIエージェントを理解し、動かしてみる"
+lang: "ja"
+category: "workshop"
+module: "session-01"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 1: 基礎 — AIエージェントを理解し、動かしてみる
 
 ## セッション概要

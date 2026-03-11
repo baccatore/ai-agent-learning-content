@@ -1,3 +1,11 @@
+---
+title: "Session 4: Operations — Managing Work with GitHub"
+lang: "en"
+category: "workshop"
+module: "session-04"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 4: Operations — Managing Work with GitHub
 
 ## Session Overview

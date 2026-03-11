@@ -1,3 +1,11 @@
+---
+title: "Session 3: Experiencing Data Analysis and Additional Use Cases"
+lang: "en"
+category: "workshop"
+module: "session-03"
+contentType: "participant-handout"
+order: 2
+---
 # Session 3: Experiencing Data Analysis and Additional Use Cases
 
 ## What We'll Do Today

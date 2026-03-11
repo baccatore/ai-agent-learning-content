@@ -1,3 +1,11 @@
+---
+title: "Session 1: AIエージェントを理解し、動かしてみよう"
+lang: "ja"
+category: "workshop"
+module: "session-01"
+contentType: "participant-handout"
+order: 2
+---
 # Session 1: AIエージェントを理解し、動かしてみよう
 
 ## 今日やること

@@ -1,3 +1,11 @@
+---
+title: "Module 1: 基礎編 — 演習問題集"
+lang: "ja"
+category: "self-study"
+module: "01-foundations"
+contentType: "exercises"
+order: 2
+---
 # Module 1: 基礎編 — 演習問題集
 
 この演習問題集は、Module 1（基礎編）の理解を深めるためのものです。各演習を順番に進めてください。演習の最後には解答例・期待結果を掲載していますので、自分の回答と比較してみましょう。

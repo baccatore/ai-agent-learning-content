@@ -1,3 +1,11 @@
+---
+title: "Module 2: Practical Skills — Using Claude Code in Your Work"
+lang: "en"
+category: "self-study"
+module: "02-practical-skills"
+contentType: "textbook"
+order: 1
+---
 # Module 2: Practical Skills — Using Claude Code in Your Work
 
 > **Prerequisites**: You should have completed Module 1 and be comfortable with basic Claude Code operations (launching, giving simple instructions, file operations).

@@ -1,3 +1,11 @@
+---
+title: "Session 0: Experience the Power of AI Agents"
+lang: "en"
+category: "workshop"
+module: "session-00"
+contentType: "participant-handout"
+order: 2
+---
 # Session 0: Experience the Power of AI Agents
 
 ## What We're Doing Today

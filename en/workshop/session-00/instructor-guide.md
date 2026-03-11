@@ -1,3 +1,11 @@
+---
+title: "Session 0: Experience — Witness the Power of AI Agents Firsthand"
+lang: "en"
+category: "workshop"
+module: "session-00"
+contentType: "instructor-guide"
+order: 1
+---
 # Session 0: Experience — Witness the Power of AI Agents Firsthand
 
 ## Session Overview
