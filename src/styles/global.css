@@ -4,33 +4,58 @@
 
 /* --- Design Tokens --- */
 :root {
-  /* Backgrounds */
-  --bg-main: #FFFFFF;
-  --bg-secondary: #FAFAFA;
-  --bg-code: #F5F5F4;
+  /* Colors */
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #FAFAFA;
+  --color-bg-code: #F5F5F4;
+  --color-border: #E5E5E5;
+  --color-border-light: #F0F0F0;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+  --color-accent: #D94032;
+  --color-accent-hover: #B8342A;
+  --color-accent-light: #FEF2F1;
 
-  /* Borders */
-  --border: #E5E5E5;
-  --border-light: #F0F0F0;
+  /* Legacy aliases (used in .prose rules below) */
+  --bg-main: var(--color-bg);
+  --bg-secondary: var(--color-bg-secondary);
+  --bg-code: var(--color-bg-code);
+  --border: var(--color-border);
+  --border-light: var(--color-border-light);
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --accent: var(--color-accent);
+  --accent-hover: var(--color-accent-hover);
+  --accent-light: var(--color-accent-light);
 
-  /* Text */
-  --text-primary: #1A1A1A;
-  --text-secondary: #6B7280;
-  --text-muted: #9CA3AF;
-
-  /* Accent (朱色) */
-  --accent: #D94032;
-  --accent-hover: #B8342A;
-  --accent-light: #FEF2F1;
-
-  /* Typography */
+  /* Typography Scale */
   --font-sans: system-ui, -apple-system, 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
 
   /* Layout */
   --sidebar-width: 260px;
   --toc-width: 220px;
-  --content-max-width: 780px;
+  --content-max: 780px;
+  --content-max-width: var(--content-max);
   --header-height: 56px;
 }
 
