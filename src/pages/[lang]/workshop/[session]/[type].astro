@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import DocsLayout from '../../../../layouts/DocsLayout.astro';
+import { workshopBreadcrumbs } from '../../../../utils/breadcrumbs';
+
+export async function getStaticPaths() {
+  const langs = ['ja', 'en'] as const;
+  const sessions = ['session-00', 'session-01', 'session-02', 'session-03', 'session-04'];
+  const types = ['instructor-guide', 'participant-handout'];
+
+  const paths = [];
+  for (const lang of langs) {
+    const collection = await getCollection(`${lang}-workshop`);
+    for (const session of sessions) {
+      for (const type of types) {
+        const entry = collection.find(e =>
+          e.id.includes(session) && e.id.includes(type)
+        );
+        if (entry) {
+          paths.push({
+            params: { lang, session, type },
+            props: { entry },
+          });
+        }
+      }
+    }
+  }
+  return paths;
+}
+
+const { lang, session, type } = Astro.params as {
+  lang: 'ja' | 'en';
+  session: string;
+  type: string;
+};
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const breadcrumbs = workshopBreadcrumbs(lang, session, type);
+---
+
+<DocsLayout
+  title={entry.data.title}
+  lang={lang}
+  breadcrumbs={breadcrumbs}
+  headings={headings}
+>
+  <Content />
+</DocsLayout>
