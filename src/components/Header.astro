@@ -1,5 +1,6 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import MobileMenuButton from './MobileMenuButton.astro';
 
 interface Props {
   lang: 'ja' | 'en';
@@ -15,7 +16,10 @@ const siteTitle = lang === 'ja' ? 'AI Agent 学習コンテンツ' : 'AI Agent L
       <span class="logo-mark">▸</span>
       <span class="logo-text">{siteTitle}</span>
     </a>
-    <LanguageSwitcher lang={lang} />
+    <div class="header-actions">
+      <MobileMenuButton />
+      <LanguageSwitcher lang={lang} />
+    </div>
   </div>
 </header>
 
@@ -50,5 +54,10 @@ const siteTitle = lang === 'ja' ? 'AI Agent 学習コンテンツ' : 'AI Agent L
   .logo-mark {
     color: var(--color-accent);
     font-size: var(--text-xl);
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
   }
 </style>
